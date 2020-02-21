@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Panel Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Bienvenido {{argumento}}</p>
+  <ion-grid>
+  <ion-row>
+    <ion-col  *ngFor="let modulo of modulos">
+      <ion-card>
+     
+        <ion-img [src]="modulo.imagen"></ion-img>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  </ion-grid>
+
+</ion-content>
